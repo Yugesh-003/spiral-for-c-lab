@@ -1,3 +1,4 @@
+//to find the person is eligible for voting or not
 #include<stdio.h>
 void main()
 {
