@@ -23,18 +23,18 @@ void main()
 
     // Input matrix 1
     printf("Enter elements of first matrix:\n");
-    for (i = 0; i < r1; ++i)
+    for (i = 0; i < r1; i++)
     {
-        for (j = 0; j < c1; ++j)
+        for (j = 0; j < c1; j++)
         {
             scanf("%d", &matrix1[i][j]);
         }
     }
     // Input matrix 2
     printf("Enter elements of second matrix:\n");
-    for (i = 0; i < r2; ++i)
+    for (i = 0; i < r2; i++)
     {
-        for (j = 0; j < c2; ++j)
+        for (j = 0; j < c2; j++)
         {
             scanf("%d", &matrix2[i][j]);
         }
