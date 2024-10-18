@@ -4,7 +4,7 @@ int main()
 {
     int matrix[100][100],row,col,i,j;
 
-    printf("Etner rows and columns of the matrix : \n");
+    printf("Enter rows and columns of the matrix : \n");
     scanf("%d %d",&row,&col);
 
     printf("Enter the elements of the matrix : \n");
@@ -26,7 +26,7 @@ int main()
         printf("\n");
     }
 
-    printf("\nThe transporse of the given matrix is \n");
+    printf("\nThe transpose of the given matrix is \n");
     for (i = 0; i < row; i++)
     {
         for (j = 0; j< col; j++)
