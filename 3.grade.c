@@ -1,3 +1,4 @@
+//to find the grade of a student
 #include <stdio.h>
 
 int main() 
@@ -7,7 +8,7 @@ int main()
     a:printf("Enter your score: ");
     scanf("%d", &score);
     
-    if (score > 100)
+    if (score > 100 || score < 0)
     {
         printf("Invalid score. Please enter a score between 0 and 100.\n");
         goto a;
@@ -24,7 +25,6 @@ int main()
         printf("Grade: E\n");
     else if (score >= 0) 
         printf("Grade: F\n");
-    else 
-        printf("Invalid score. Please enter a score between 0 and 100.\n");
+    
     return 0;
 }
