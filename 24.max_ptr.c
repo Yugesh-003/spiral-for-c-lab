@@ -1,4 +1,4 @@
-//to find the minimum of given n numbers
+//to find the maximum of given n numbers
 #include <stdio.h>
 #include <stdlib.h>
 int main() 
