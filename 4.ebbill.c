@@ -1,12 +1,15 @@
+//To find the EB-bill amount for the given unit
 #include<stdio.h>
 #include<string.h>
 
-int main() {
+int main() 
+{
     char name[30], type[9];
     int id, unit;
     float amt = 0;
+    
     printf("\t\tEB BILL CALCULATION\n\n");
-
+    //taking input from the user
     printf("Enter your name: ");
     scanf("%s", name);
     printf("Enter your EB id: ");
@@ -15,9 +18,9 @@ int main() {
     scanf("%s", type);
     printf("Enter the unit: ");
     scanf("%d", &unit);
-
-    if (strcmp(type, "business") == 0) 
-    {
+    
+    if (strcmp(type, "business") == 0) //if the type is business
+    {    
         if (unit >= 1000)
             amt = 6 * unit;
         else if (unit >= 500)
@@ -25,7 +28,7 @@ int main() {
         else
             amt = 2 * unit;
     } 
-    else if (strcmp(type, "home") == 0) 
+    else if (strcmp(type, "home") == 0) //if the type is home
     {
         if (unit > 1000)
             amt = (unit - 1000) * 11.00 + 200 * 10.00 + 200 * 9.00 + 100 * 8.00 + 100 * 6.00 + 300 * 4.50;
@@ -40,7 +43,7 @@ int main() {
         else if (unit > 100)
             amt = (unit - 100) * 4.50;
     }
-
+    //output
     printf("\nHi %s", name);
     printf("\nThe amount you have to pay is %.2f", amt);
     return 0;
