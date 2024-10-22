@@ -3,7 +3,7 @@
 #include<math.h>
 int count(int no)
 {
-    int n,count = 0;
+    int count = 0;
     //to count the numbers
     while (no != 0)
     {
